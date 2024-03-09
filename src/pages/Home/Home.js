@@ -18,7 +18,7 @@ const Home = () => {
     <div>
       {loading ? (
         <div className="loading">
-          {/* Aryan */}
+          
           <div className="loading-spinner"></div>
         </div>
       ) : (
