@@ -1,0 +1,30 @@
+/* Add this to your About.css file */
+
+.about {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2em;
+    color: #333333; /* Set your heading color */
+  }
+  
+  .about p {
+    font-size: 1.2em;
+    color: #555555; /* Set your text color */
+    margin-top: 20px;
+  }
+  
+  /* SVG Images Styles */
+  .svg-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .svg-image {
+    width: 200px;
+    height: auto;
+  }
+  
