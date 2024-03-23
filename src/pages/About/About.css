@@ -1,30 +1,45 @@
-/* Add this to your About.css file */
+/* About.css */
 
 .about {
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .about h2 {
-    font-size: 2em;
-    color: #333333; /* Set your heading color */
-  }
-  
-  .about p {
-    font-size: 1.2em;
-    color: #555555; /* Set your text color */
-    margin-top: 20px;
-  }
-  
-  /* SVG Images Styles */
-  .svg-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-  
-  .svg-image {
-    width: 200px;
-    height: auto;
-  }
-  
+  padding: 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #333333; /* Set your heading color */
+}
+
+.about .content-container {
+  display: flex;
+  flex-direction: column; /* Display content in a column on small screens */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about .text-column,
+.about .image-column {
+  width: 100%;
+  max-width: 600px; /* Set your maximum width as needed */
+}
+
+.about p {
+  font-size: 1.2em;
+  color: #555555; /* Set your text color */
+  margin-top: 20px;
+}
+
+/* SVG Images Styles */
+.about .image-column {
+  margin-top: 20px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+}
+
+.svg-image {
+  max-width: 100%;
+  height: auto;
+}

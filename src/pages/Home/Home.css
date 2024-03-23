@@ -1,69 +1,88 @@
-/* Add this to your Home.css file */
+/* Home.css */
 
 /* Loading Page Styles */
 .loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0; /* Placeholder background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Placeholder background color */
+}
+
+.loading-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .loading-spinner {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  /* Home Page Styles */
-  .home {
-    text-align: center;
-    padding: 50px;
-    background-color: #ffffff; /* Set your official background color */
-  }
-  
-  .home h2 {
-    font-size: 2em;
-    color: #333333; /* Set your desired text color */
-  }
-  
-  .home p {
-    font-size: 1.2em;
-    color: #555555; /* Set your desired text color */
-    margin-bottom: 20px;
-  }
-  
-  .home button {
-    background-color: #3498db; /* Set your desired button color */
-    color: #ffffff; /* Set your desired button text color */
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .home button:hover {
-    background-color: #2980b9; /* Set your desired button hover color */
-  }
-  
-  /* SVG Images Styles */
+}
+
+/* Home Page Styles */
+.home {
+  text-align: center;
+  padding: 50px;
+  background-color: #ffffff; /* Set your official background color */
+}
+
+.home h2 {
+  font-size: 2em;
+  color: #333333; /* Set your desired text color */
+}
+
+.home p {
+  font-size: 1.2em;
+  color: #555555; /* Set your desired text color */
+  margin-bottom: 20px;
+}
+
+.home button {
+  background-color: #3498db; /* Set your desired button color */
+  color: #ffffff; /* Set your desired button text color */
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home button:hover {
+  background-color: #2980b9; /* Set your desired button hover color */
+}
+
+/* SVG Images Styles */
+.svg-container {
+  display: flex;
+  flex-direction: column; /* Adjusted to column layout on small screens */
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.svg-image1,
+.svg-image2 {
+  width: 100%; /* Adjusted to full width on small screens */
+  height: auto;
+  margin: 10px 0; /* Adjusted margin */
+}
+
+/* Responsive Styling */
+@media screen and (min-width: 768px) {
   .svg-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    flex-direction: row; /* Adjusted back to row layout on larger screens */
   }
-  
-  .svg-image {
+
+  .svg-image1,
+  .svg-image2 {
     width: 200px;
-    height: auto;
+    margin: 0 50px; /* Adjusted margin for larger screens */
   }
-  
+}

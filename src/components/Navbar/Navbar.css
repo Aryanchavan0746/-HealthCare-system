@@ -1,57 +1,100 @@
-/* Add this to your Navbar.css file */
+/* Navbar.css */
 
 .navbar {
-    background-color: #3498db; /* Set your Navbar background color */
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  background-color: #3498db;
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding-left: 500px;
   
+  
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #927777;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #ffffff;
+  color: #3498db;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #f2f2f2;
+  color: #3498db;
+}
+
+.logo1 {
+  border-radius: 50%;
+  height: 70px;
+  margin: 10px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
   .navbar ul {
-    list-style: none;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #3498db;
+    width: 100%;
+    text-align: right;
+    display: none;
+  }
+
+  .navbar ul.active {
     display: flex;
   }
-  
+
   .navbar li {
-    margin-right: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #ffffff; /* Set your Navbar link color */
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: color 0.3s ease;
+
+  .navbar {
+    flex-direction: column;
+    position: relative;
   }
-  
-  .navbar a:hover {
-    color: #f2f2f2; /* Set your Navbar link hover color */
-  }
-  
+
   .search-bar {
-    display: flex;
+    margin-top: 10px;
   }
-  
-  .search-bar input {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  
-  .search-bar button {
-    background-color: #ffffff; /* Set your search button background color */
-    color: #3498db; /* Set your search button text color */
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .search-bar button:hover {
-    background-color: #f2f2f2; /* Set your search button hover background color */
-    color: #3498db; /* Set your search button hover text color */
-  }
-  
+}

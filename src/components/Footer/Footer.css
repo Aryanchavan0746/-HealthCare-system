@@ -1,26 +1,49 @@
-/* Add this to your Footer.css file */
+/* Footer.css */
 
 .footer {
-    background-color: #3498db; /* Set your footer background color */
-    padding: 20px;
-    text-align: center;
-    color: #ffffff; /* Set your text color */
-  }
+  background-color: #3498db;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-align: left;
+}
+
+.social-media {
+  margin-bottom: 15px;
+  text-align: center;
+  text-align:end;
   
+
+}
+.social-media img {
+  width: 35px; /* Adjust the size as needed */
+  height: 35px; /* Adjust the size as needed */
+}
+
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+
+.social-media a:hover {
+  color: #f2f2f2;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
   .social-media {
-    margin-bottom: 15px;
+    text-align: center;
   }
-  
+
   .social-media a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #ffffff; /* Set your social media icon color */
-    text-decoration: none;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
   }
-  
-  .social-media a:hover {
-    color: #f2f2f2; /* Set your social media icon hover color */
-  }
-  
+}

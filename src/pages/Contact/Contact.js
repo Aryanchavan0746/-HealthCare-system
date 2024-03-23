@@ -26,10 +26,13 @@ const Contact = () => {
           <label>Phone Number</label>
           <input type="tel" placeholder="Phone Number" />
         </div>
+       
+      </form>
+      <div className='com'>
         <label>Comments</label>
         <textarea placeholder="Enter your comments here..."></textarea>
         <button type="submit">Submit</button>
-      </form>
+      </div>
     </div>
   );
 };
