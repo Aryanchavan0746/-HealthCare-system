@@ -1,27 +1,24 @@
 /* Footer.css */
 
 .footer {
-  
-  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #3498db;
   padding: 20px;
   color: #ffffff;
   text-align: center;
-  text-align: left;
 }
 
 .social-media {
   margin-bottom: 15px;
-  text-align: center;
-  text-align:end;
-  
-
 }
+
 .social-media img {
   width: 35px; /* Adjust the size as needed */
   height: 35px; /* Adjust the size as needed */
 }
-
 
 .social-media a {
   display: inline-block;
@@ -31,7 +28,6 @@
   font-size: 1.5em;
   transition: color 0.3s ease;
 }
-
 
 .social-media a:hover {
   color: #f2f2f2;

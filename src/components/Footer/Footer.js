@@ -1,10 +1,10 @@
+// Footer.js
 import React from 'react';
 import './Footer.css';
-import Linkedin_icon from '../../Images/Linkedin_icon.png'
-import twitter_icon from '../../Images/twitter_icon.png'
-import insta_icon from '../../Images/insta_icon.png'
-import face_icon from '../../Images/face_icon.png'
-
+import Linkedin_icon from '../../Images/Linkedin_icon.png';
+import twitter_icon from '../../Images/twitter_icon.png';
+import insta_icon from '../../Images/insta_icon.png';
+import face_icon from '../../Images/face_icon.png';
 
 const Footer = () => {
   return (
@@ -24,8 +24,8 @@ const Footer = () => {
         </a>
       </div>
       <div>
-      <p>1 Health Street, Cityville, Country</p>
-      <p>&copy; 2024 Pregnant Women Healthcare System. All rights reserved.</p>
+        <p>1 Health Street, Cityville, Country</p>
+        <p>&copy; 2024 Pregnant Women Healthcare System. All rights reserved.</p>
       </div>
     </footer>
   );
